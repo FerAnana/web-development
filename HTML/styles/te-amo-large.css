@@ -49,6 +49,11 @@
     align-self: center;
   }
 
+  picture img {
+    width: 170px;
+    height: 400px;
+  }
+
   .text p {
     font-size: medium;
     margin-bottom: 1rem;
