@@ -1,0 +1,27 @@
+@media screen and (min-width: 500px) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav ul a {
+    display: block;
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,28 @@
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
+const list = document.querySelector("ul");
+
+button.addEventListener("click", function () {
+  if (input.value.trim() !== "") {
+    const li = document.createElement("li");
+    li.textContent = input.value.trim();
+
+    list.appendChild(li);
+
+    input.value = "";
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "❌";
+
+    li.appendChild(deleteButton);
+
+    deleteButton.addEventListener("click", function () {
+      list.removeChild(li);
+      input.focus();
+    });
+  } else {
+    input.focus();
+  }
+
+  input.focus();
+});

@@ -1,0 +1,20 @@
+/*
+Media queries are written like this, "@media" after 
+the media you type the mediatype followed by an "and" and 
+the "(expressions)" between parenthesis
+
+This block meanse the the CSS rules written inside of the block
+will be applied when the conditions in the "(expression)" are met.
+*/
+@media screen and (min-width: 500px) {
+  header {
+    background-color: black;
+    color: white;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

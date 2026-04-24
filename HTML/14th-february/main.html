@@ -8,13 +8,24 @@
       name="description"
       content="Una página creada solo para que mi futura esposa pueda sentirse amada"
     />
-    <link rel="stylesheet" href="styles/te-amo.css" />
-    <link rel="stylesheet" href="styles/te-amo-large.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/main-large.css" />
+    <script src="scripts/main.js" defer></script>
     <title>Hasta la eternidad</title>
   </head>
   <body>
     <header>
       <h1>Hasta la eternidad</h1>
+      <button id="menu"></button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Todas</a></li>
+          <li><a href="#">Propuesta</a></li>
+          <li><a href="#">Templo</a></li>
+          <li><a href="#">Citas</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="box">
@@ -61,7 +72,8 @@
       </div>
     </main>
     <footer>
-      <p>Este es un adelanto de mi sorpresa para nosotros</p>
+      <p>© <span id="currentYear"></span> Fernando Añaña - Uruguay</p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>

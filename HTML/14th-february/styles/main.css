@@ -1,0 +1,115 @@
+:root {
+  background-color: rgb(255, 240, 255);
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+header {
+  align-items: center;
+  width: 100%;
+  background-color: mistyrose;
+}
+
+header h1 {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem 0 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+ul a {
+  display: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 2px 10px 2px 10px;
+  margin: 0;
+}
+
+li a:hover {
+  font-weight: bold;
+  background-color: lightpink;
+  border-radius: 5px;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "x";
+}
+
+.open a {
+  display: block;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box {
+  display: grid;
+  margin: 3.5rem 0.5rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 500px;
+  max-height: fit-content;
+  align-self: center;
+  justify-self: center;
+  background-color: lightpink;
+  grid-template-rows: 5% 24% 47% 24%;
+}
+
+h2 {
+  justify-self: center;
+  font-size: x-large;
+}
+
+.text,
+picture {
+  justify-self: center;
+  align-self: center;
+}
+
+picture img {
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.text p {
+  font-size: medium;
+  margin: 1.5rem 2rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  background-color: mistyrose;
+}
